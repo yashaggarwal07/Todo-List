@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" type="text/css" href="style.css">
+ 
+</head>
+<body>
+<div class="container">
+<div id="myDIV" class="header">
+  <h2 style="margin:5px">My To Do List</h2>
+  <input type="text" id="myInput" placeholder="Add ToDo Item...">
+  <span onclick="addTodo()" class="addBtn">Add item</span>
+</div>
+
+<ul id="myUL">
+  <li>First Todo</li>
+  <li>Second Todo</li>
+  <li>Third Todo</li>
+</ul>
+<div style="display: inline-block;background-color: white;width: 100%">
+<label>Task left</label>	
+<button type="button" id="clear-list" onclick="removeAll()">Clear Items</button>
+<label style="margin-left:300px">All</label>
+<label style="color: lightgrey">Uncompleted</label>
+<label style="color: lightgrey">Completed</label>
+</div>
+</div>
+<script src="script.js">
+</script>
+
+</body>
+</html>
